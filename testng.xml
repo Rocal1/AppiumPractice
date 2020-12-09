@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Appium Suite" parallel="tests"
+       thread-count="1">
+    <test name="iOS Tests">
+        <classes>
+            <class name="iOSTests.PickerView"></class>
+            <class name="iOSTests.ScrollDown"/>
+            <class name="iOSTests.TextEntry"/>
+        </classes>
+    </test>
+    <test name="iOS Browser">
+        <classes>
+            <class name="iOSTests.SafariBrowser"/>
+        </classes>
+    </test>
+</suite>
